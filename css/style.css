@@ -1,0 +1,439 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+#Test {
+    position:relative;
+   
+}
+
+
+.home-page {
+    padding:0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.home-page img {
+    width:100%;
+}
+
+#sidebar{
+    position: fixed;
+    padding-top:15px;
+    width: 230px;
+    height: 100%;
+    left: 0px;
+    display: none;
+    background-color:#dfe6e9;
+    transition: all .5s ease;
+}
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li{
+    color:black;
+    padding:15px 10px;
+    border-bottom:1px solid #868686; 
+}
+.toggle-btn {
+    position: absolute;
+    top:20px;
+    left:20px;
+} 
+.toggle-btn:hover {
+    cursor: pointer;
+}
+.toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px 0;
+    background-color:#004085; 
+}
+
+
+.toggle-btn2 {
+    position: absolute;
+    top:20px;
+    display:none;
+    left:20px;
+} 
+.toggle-btn2:hover {
+    cursor: pointer;
+}
+.toggle-btn2 span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px 0;
+    background-color:#004085; 
+}
+
+
+
+.search-main {
+    padding:0;
+    position: absolute;
+    top:20px;
+    left:80%; 
+    height:40px;
+    border-radius:40px;
+    background-color:#004085;
+    
+}
+.search-main:hover {
+    width: 180px;
+    transition:.8s; 
+}
+.search-main:hover > .search-btn {
+    background-color:white;
+    color: darkcyan;
+    transition:.8s; 
+    
+}
+.search-main:hover > a{
+    text-decoration: none;
+    transition:.8s; 
+}
+.search-btn {
+    padding: 0;
+    color:white;
+    float: right;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    transition:.8s; 
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    background-color: #004085;
+}
+.search-btn i{
+    padding-top:20%;  
+}
+
+.search-item {
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    padding:0px;
+    font-size: 16px;
+    transition:.8s; 
+    color: white;
+    line-height:1.6;
+    width:0px;
+}
+
+
+.logos {
+    
+    
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    position: absolute;
+    top:-100px;
+    background-color:#f5f6fa; 
+    display: flex;
+    justify-content: center;
+    box-shadow:5px 5px 10px -5px #004085 ,
+             -5px -5px 10px -5px #004085 ,
+              5px -5px 10px -5px #004085 ,
+             -5px  5px 10px -5px #004085 ;
+}
+
+.logos h2 {
+    position: absolute;
+    color:#004085;
+    text-align: center;
+    top:120px;
+}
+
+
+
+.navs {
+    padding-left: 30px;
+    
+    
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+}
+
+.heading button {
+    margin-top: 50px;
+    margin-left: 130px;
+    padding:10px 20px;
+    border-radius:25px;
+    border-color:#004085;
+    display:flex;
+    justify-content:center;
+    align-content: center;
+    background:none;
+    color:#004085;   
+}
+
+.heading h3 {
+    color:#004085;
+}
+
+#About {
+    background-color:#FFFFFF;
+    
+    padding-top: 100px;
+    
+}
+.simples h3 {
+    font-size: 20px;
+    color: #004085;
+    text-align: center;
+    
+}
+
+.amets {
+    padding: 30px;
+    text-align: center;
+}
+
+.amets i {
+    font-size: 30px;
+    color: #004085;
+    
+
+}
+
+.amets h5 {
+    font-size: 15px;
+    color:#004085;
+    padding-top: 10px;
+    
+}
+.amets p {
+    font-size: 10px;
+    padding-top: 10px;
+    
+    
+}
+
+.amets >div {
+    padding: 10px;
+    background-color: aliceblue;
+    
+}
+
+.backs {
+    padding: 40px 0;
+    background-color:#FAFAFA;
+    
+    
+}
+
+
+
+
+
+
+.collect img {
+    width: 100%;
+    height:40%;
+    
+    
+}
+
+.text {
+    text-align: center;
+    padding-top: 70px;
+    
+}
+
+.text h3 {
+    
+    font-family: monospace;
+    color: #004085;
+    font-weight:600;
+}
+
+.text p {
+    font-family: monospace;
+    color:gray;
+    
+}
+
+
+
+
+
+#Datas {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+
+.gronds {
+    
+    background-image: url(../images/background-3138516_960_720.jpg);
+    background-size: cover;
+}
+/*
+.gronds .childs {
+    margin-top: 10%;
+}
+*/
+.gronds .childs img {
+    box-shadow:5px 5px 8px -5px #004085 ,
+                -5px -5px 8px -5px #004085 ;
+    width: 100%;
+    height:80%;
+    
+    
+}
+
+
+.gronds .child {
+    text-align: center;
+    margin-top:15%;
+    
+}
+
+.gronds .child h3 {
+    font-family: cursive;
+    color: #004085;
+}
+
+.gronds .child p {
+    color:gray;
+    font-weight: 300;
+    padding: 20px;
+}
+
+
+#Informations {
+    padding-top: 20px
+}
+
+
+.information {
+    background-image: url(../images/nano.jpg);
+    background-size: cover;
+} 
+.information .item{
+    margin-bottom: 20px;
+}
+
+.information .items {
+    margin-top: 130px;
+    
+}
+.information .items h3 {
+    
+    font-family: cursive;
+    color: #004085;
+    padding-bottom: 10px;
+}
+
+.information .items p {
+    
+    color:gray;
+    padding: 5px;
+}
+
+.information .items h6 {
+    color: #004085;
+}
+
+
+ 
+
+
+
+
+
+.contact {
+    background-image: url(../images/img60.jpg);
+    background-size: cover;
+    
+}
+
+.contact .system h5 {
+    padding-top: 50px;
+    color:#004085;
+    font-weight: 100;
+    font-size:10px;
+    
+    
+}
+.contact .system h3 {
+    font-weight: 500;
+    font-size:20px;
+    color: #004085;
+}
+
+
+.contact .system  button {
+    margin-left: 80px;
+    margin-bottom: 500px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
